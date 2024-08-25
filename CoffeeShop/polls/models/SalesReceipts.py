@@ -5,7 +5,7 @@ from .Product import Product
 
 
 class SalesReceipts(models.Model):
-    transaction_id = models.AutoField(primary_key=True)
+    transaction_id = models.IntegerField(primary_key=True)
     transaction_date = models.DateField()
     transaction_time = models.DateTimeField()
     sales_outlet_id = models.ForeignKey(SalesOutlet, on_delete=models.CASCADE)

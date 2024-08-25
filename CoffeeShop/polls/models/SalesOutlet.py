@@ -2,7 +2,7 @@ from django.db import models
 
 
 class SalesOutlet(models.Model):
-    sales_outlet_id = models.AutoField(primary_key=True)
+    sales_outlet_id = models.IntegerField(primary_key=True)
     sales_outlet_type = models.CharField(max_length=20)
     store_square_feet = models.IntegerField()
     store_address = models.CharField(max_length=150)
